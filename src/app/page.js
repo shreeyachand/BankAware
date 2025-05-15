@@ -11,7 +11,7 @@ export default function Home() {
       <h3>Meet the Team!</h3>
       <div className="headshots-container">
         <img
-          src="/Phanuelle_Manuel.jpg"
+          src="/Phanuelle_Manuel_square.jpg"
           alt="Phanuelle"
         />
         <img

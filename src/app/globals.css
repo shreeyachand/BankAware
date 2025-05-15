@@ -66,12 +66,14 @@ h3 {
   margin-left: 250px;
   display: flex;
   /* justify-content: center; */
-  /* align-items: center; */
+  align-items: center;
   gap: 20px;
 }
 
 .headshots-container img {
-  width: 150px; /* Set a fixed width for the images */
-  height: auto; /* Maintain aspect ratio */
+  width: 200px; /* Set a fixed width for the images */
+  height: 200px; /* Maintain aspect ratio */
   border-radius: 50%; /* Makes the images circular */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  object-position: center center; /* Centers the image within the circle */
 }
