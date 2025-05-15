@@ -19,6 +19,7 @@ const Subs = () => {
                 cost={subscription.cost}
                 active={true}
                 date={subscription.date}
+                last={subscription.last}
             />
             ))}
         </div>

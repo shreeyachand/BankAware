@@ -1,7 +1,7 @@
 'use client'; // Only needed if using client-side features like useState/useEffect
 
 import './Subscription.css'; // Import the CSS file for styling
-const Subscription = ({ name, type, image, cost, active, savings, date}) => {
+const Subscription = ({ name, type, image, cost, active, savings, date, last}) => {
   return (
     <div className="subscription">
         <img src={image} alt={`${name} logo`} />
@@ -19,6 +19,7 @@ const Subscription = ({ name, type, image, cost, active, savings, date}) => {
                   <p>Based on your transaction history</p>
               </div>
             }
+            {last && <p>Service used last: {last}. Consider unsubscribing! </p>}
             
         </div>
     </div>
