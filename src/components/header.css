@@ -10,14 +10,14 @@
   }
   
   .logo {
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Barlow', sans-serif;
   }
   
   .links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
   }
   
   a {
@@ -26,3 +26,9 @@
     color: white;
     font-weight: 600;
   }
+
+  .nav-icon {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    /* margin-right: 10px; Add spacing if needed */
+}

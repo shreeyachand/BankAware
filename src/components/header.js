@@ -5,7 +5,10 @@ import './header.css';
 const Header = () => {
     return (
         <div className="header">
-            <h1 className="logo">Subscription Tracker</h1>
+            <Link href="/">
+            <img className="nav-icon"src="/favicon.jpeg" alt="Logo"></img>
+            </Link>
+            <h1 className="logo">BankAware</h1>
             <div className="links">
                 <Link href="/">Home Page</Link>
                 <Link href="/subscription">Subscriptions</Link>
