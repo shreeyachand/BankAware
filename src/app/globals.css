@@ -54,3 +54,24 @@ h2 {
   margin-top: 50px;
   font-family: "Barlow";
 }
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Barlow";
+}
+
+.headshots-container {
+  width: 400px;
+  margin-left: 250px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.headshots-container img {
+  width: 150px; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes the images circular */
+}

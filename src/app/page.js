@@ -8,7 +8,25 @@ export default function Home() {
     <>
       <h2>Welcome to BankAware, your personal subscription tracker and banking "know-it-all."</h2>
       {/*Sample of using subscription component, will be filled with our data*/}
-      <Subscription name="Hulu" />
+      <h3>Meet the Team!</h3>
+      <div className="headshots-container">
+        <img
+          src="/Phanuelle_Manuel.jpg"
+          alt="Phanuelle"
+        />
+        <img
+          src="/shreeya-headshot.jpeg"
+          alt="Shreeya"
+        />
+        <img
+          src="/Joshua-Headshot.jpg"
+          alt="Joshua"
+        />
+        <img
+          src="/images/benjamin.jpeg"
+          alt="Bridget"
+        />
+        </div>
     </>
   );
 }
