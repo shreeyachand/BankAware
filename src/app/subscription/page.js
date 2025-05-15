@@ -2,13 +2,14 @@
 
 import Subscription from '../../components/Subscription';
 import { activeSubscriptions, recommendedSubscriptions } from "../../data/data";
-import styles from "../globals.css";
+import "../globals.css";
+import './Subs.css';
 
 const Subs = () => {
     return (
         <>
         <div className="active-subscriptions">
-            <h1>Active Subscriptions</h1>
+            <h1 className="subs-header">Active Subscriptions</h1>
             {activeSubscriptions.map((subscription) => (
             <Subscription
                 key={subscription.name}
@@ -17,11 +18,12 @@ const Subs = () => {
                 type={subscription.type}
                 cost={subscription.cost}
                 active={true}
+                date={subscription.date}
             />
             ))}
         </div>
         <div className="recommended-subscriptions">
-            <h1>Recommended Subscriptions</h1>
+            <h1 className="subs-header">Recommended for You</h1>
             {recommendedSubscriptions.map((subscription) => (
             <Subscription
                 key={subscription.name}
