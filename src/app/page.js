@@ -1,7 +1,7 @@
 import Image from "next/image";
-// import styles from "./page.module.css";
-import  "./globals.css";
+import styles from "./globals.css";
 import Subscription from "@/components/Subscription";
+import { activeSubscriptions, recommendedSubscriptions } from "@/data/data";
 
 export default function Home() {
   return (
