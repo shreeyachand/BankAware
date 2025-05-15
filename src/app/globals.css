@@ -47,3 +47,9 @@ a {
     color-scheme: dark;
   }
 }
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Barlow";
+}

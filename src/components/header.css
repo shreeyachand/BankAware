@@ -1,12 +1,17 @@
 @import "../app/globals.css";
 
+body {
+  font-family: "Barlow", sans-serif;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 100px;
-    background-color: var(--accent-color);
+    background-color: var(--foreground);
     color: white;
+    font-family: "Barlow", sans-serif;
   }
   
   .logo {
@@ -32,3 +37,8 @@
     height: 60px;
     /* margin-right: 10px; Add spacing if needed */
 }
+
+/* @font-face {
+  font-family: 'Barlow';
+  src: url("http://fonts.googleapis.com/css?family=Barlow");
+} */
