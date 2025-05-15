@@ -6,21 +6,28 @@ const Subscription = ({ name, type, image, cost, active, savings, date, last}) =
     <div className="subscription">
         <img src={image} alt={`${name} logo`} />
         <div className="sub-info">
-            <p>{type}</p>
+            <p className='type'>{type}</p>
             {active && 
               <div>
-                <p>${cost} monthly</p>     
+                <p className='money'>${cost} monthly</p>     
                 <p>Last payment: {date} </p>
               </div>           
             }
             {!active && 
               <div>
-                  <p>Estimated 30-day savings: ${savings}</p>
+                  <p className='money'>Estimated 30-day savings: ${savings}</p>
                   <p>Based on your transaction history</p>
               </div>
             }
-            {last && <p>Service used last: {last}. Consider unsubscribing! </p>}
-            
+
+            {last && 
+              <p className="tooltip">⚠️
+                <span> Service last used {last}. Consider unsubscribing!</span>
+                <div className="message">
+                  Message box
+                </div>
+              </p>
+            }
         </div>
     </div>
   );
