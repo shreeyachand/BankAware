@@ -16,6 +16,14 @@ export const activeSubscriptions = [
         date: "April 17",
     },
     {
+        name: "Uber One",
+        image: "https://images.squarespace-cdn.com/content/v1/61b25a70f440af12f95e7000/763f14d7-e821-4b1d-aaf2-97590e8073c4/Untitled+design+%2820%29.png",
+        type: "Transportation",
+        cost: 9.99,
+        date: "April 30",
+        last: "December 8, 2024",
+    },
+    {
         name: "Hulu",
         image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hulu_logo_%282018%29.svg/640px-Hulu_logo_%282018%29.svg.png",
