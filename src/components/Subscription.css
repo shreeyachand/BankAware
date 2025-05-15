@@ -10,7 +10,6 @@ img {
     margin: 20px;
     font-style: bold;
 }
-
 .subscription {
     display: flex;
     align-items: center;
@@ -21,4 +20,14 @@ img {
     margin-right: 25%;
     margin-bottom: 20px;
     height:150px;
+}
+.money {
+    font-weight: 700
+}
+.message {
+    display: none;
+}
+.tooltip:hover .message {
+    display: inline-block;
+    color: #d03027;
 }
