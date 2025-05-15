@@ -6,6 +6,7 @@ import { activeSubscriptions, recommendedSubscriptions } from "@/data/data";
 export default function Home() {
   return (
     <>
+      <h2>Welcome to BankAware, your personal subscription tracker and banking "know-it-all."</h2>
       <div className="active-subscriptions">
         <h1>Active Subscriptions</h1>
         {activeSubscriptions.map((subscription) => (

@@ -1,0 +1,44 @@
+@import "../app/globals.css";
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: var(--foreground);
+    color: white;
+    font-family: "Barlow", sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  .nav-icon {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    /* margin-right: 10px; Add spacing if needed */
+}
+
+/* @font-face {
+  font-family: 'Barlow';
+  src: url("http://fonts.googleapis.com/css?family=Barlow");
+} */
