@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import styles from "./globals.css";
 import Subscription from "@/components/Subscription";
 
 export default function Home() {
