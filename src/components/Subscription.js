@@ -1,11 +1,14 @@
 'use client'; // Only needed if using client-side features like useState/useEffect
 
-import React from 'react';
-
-function Subscription({ name }) {
+import './Subscription.css'; // Import the CSS file for styling
+const Subscription = ({ name, type, image, cost}) => {
   return (
-    <div>
-      Subscription: {name || 'Guest'}!
+    <div className="subscription">
+        <img src={image} alt={`${name} logo`} />
+        <div className="sub-info">
+            <p>{type}</p>
+            <p>${cost} monthly</p>
+        </div>
     </div>
   );
 }
