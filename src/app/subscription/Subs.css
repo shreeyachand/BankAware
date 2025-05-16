@@ -4,3 +4,28 @@
     margin-bottom:10px;
     font-style:italic;
 }
+
+.scroll-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .scroll-buttons button {
+    background-color: var(--foreground);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-buttons button:hover {
+    background-color: var(--accent-color);
+  }
