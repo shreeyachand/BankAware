@@ -10,8 +10,8 @@ const Subscription = ({ name, type, image, cost, active, savings, date, last}) =
             {active && 
               <div>
                 <p className='money'>${cost} monthly</p>     
-                <p>Last payment: {date} </p>
-              </div>           
+                <p>Last payment: {date} </p>            
+              </div>
             }
             {!active && 
               <div>
@@ -29,6 +29,14 @@ const Subscription = ({ name, type, image, cost, active, savings, date, last}) =
               </p>
             }
         </div>
+        {
+          active &&
+          <div className='button-col'>
+            <button className="cancel-button">Cancel {name}</button>         
+          </div>
+        }
+       
+        
     </div>
   );
 }

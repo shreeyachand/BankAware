@@ -2,14 +2,6 @@ img {
     width: 25%;
     margin: 20px;
 }
-.sub-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px;
-    font-style: bold;
-}
 .subscription {
     display: flex;
     align-items: center;
@@ -30,4 +22,33 @@ img {
 .tooltip:hover .message {
     display: inline-block;
     color: #d03027;
+}
+.sub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    font-style: bold;
+    flex: 1;
+}
+
+.button-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 200px; /* fixed width for button column */
+    height: 100%;
+}
+
+.cancel-button {
+    background-color: #d03027;
+    color: white;
+    border-color:black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width:60%;
+    margin: 0;
+    display: block;
+    font-family: Barlow;
 }
