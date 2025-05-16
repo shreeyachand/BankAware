@@ -48,7 +48,7 @@ const Subs = () => {
 
   return (
     <>
-      <div class="scroll-buttons">
+      <div className="scroll-buttons">
         <button id="scrollToTop">⬆ Scroll to Top</button>
         <button id="scrollToBottom">⬇ Scroll to Bottom</button>
       </div>
