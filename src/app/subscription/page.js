@@ -2,6 +2,7 @@
 
 import Subscription from "../../components/Subscription";
 import { activeSubscriptions, recommendedSubscriptions } from "../../data/data";
+import { useEffect } from "react";
 import "../globals.css";
 import "./Subs.css";
 
