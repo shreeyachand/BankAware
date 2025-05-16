@@ -21,7 +21,7 @@ export default function Home() {
         <div className="shreeya">
           <img src="/shreeya-headshot.jpeg" alt="Shreeya Chand" />
           <h4>Shreeya Chand</h4>
-          <p>Freshman _________ major ________</p>
+          <p>Freshman Computer Science major @ University of Southern Californias</p>
         </div>
         <div>
         <img src="/Joshua-Headshot.jpg" alt="Joshua Udo" />
