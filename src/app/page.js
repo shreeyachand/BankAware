@@ -58,9 +58,9 @@ export default function Home() {
             We've recognized how much of a struggle it is to keep up with all of
             your subscriptions. Transportation, food, entertainment--it's
             difficult to maintain a list of how much we're spending on these
-            things we enjoy so much! 42% of consumers have forgotten they were
+            things we enjoy so much! <b>42%</b> of consumers have forgotten they were
             still paying for a service they no longer used. The average consumer
-            spends $32.84 per month on unused subscriptions.
+            spends <b>$32.84</b> per month on unused subscriptions.
             <br />
             <br />
           {/* </div>
@@ -68,9 +68,9 @@ export default function Home() {
             Additionally, we know that banking is a complex and often
             overwhelming process. So, we decided to create a platform that not
             only helps you track your subscriptions but also provides you with
-            personalized banking recommendations. Our goal is to make banking
-            easier and more accessible for everyone, regardless of their
-            financial background. We believe that everyone deserves to have
+            personalized banking recommendations. Our goal is to make banking 
+            <b> easier and more accessible</b> for everyone, regardless of their
+            financial background. We believe that <i>everyone</i> deserves to have
             access to the tools and resources they need to make informed
             financial decisions.
           </div>
