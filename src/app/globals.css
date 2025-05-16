@@ -70,6 +70,7 @@ h3 {
   align-items: center;
   gap: 20px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .headshots-container img {
@@ -78,4 +79,17 @@ h3 {
   border-radius: 50%; /* Makes the images circular */
   object-fit: cover; /* Ensures the image covers the entire area */
   object-position: center center; /* Centers the image within the circle */
+}
+
+.intro-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
 }
