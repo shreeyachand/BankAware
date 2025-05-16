@@ -2,12 +2,17 @@
 
 import Subscription from "../../components/Subscription";
 import { activeSubscriptions, recommendedSubscriptions } from "../../data/data";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../globals.css";
 import "./Subs.css";
 
 const Subs = () => {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
+    // Ensure this code runs only on the client
+    setIsClient(true);
+
     const scrollToTopButton = document.getElementById("scrollToTop");
     const scrollToBottomButton = document.getElementById("scrollToBottom");
 
