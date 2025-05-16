@@ -49,8 +49,8 @@ const Subs = () => {
   return (
     <>
       <div className="scroll-buttons">
-        <button id="scrollToTop">⬆ Scroll to Top</button>
-        <button id="scrollToBottom">⬇ Scroll to Bottom</button>
+        <button id="scrollToTop">⬆</button>
+        <button id="scrollToBottom">⬇</button>
       </div>
       <div className="active-subscriptions">
         <h1 className="subs-header">Active Subscriptions</h1>
