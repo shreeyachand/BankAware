@@ -6,16 +6,46 @@ import "../globals.css";
 import "./Subs.css";
 
 const Subs = () => {
-  document.getElementById("scrollToTop").addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  useEffect(() => {
+    const scrollToTopButton = document.getElementById("scrollToTop");
+    const scrollToBottomButton = document.getElementById("scrollToBottom");
 
-  document.getElementById("scrollToBottom").addEventListener("click", () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  });
+    if (scrollToTopButton && scrollToBottomButton) {
+      scrollToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      scrollToBottomButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      });
+    }
+
+    // Cleanup event listeners when the component unmounts
+    return () => {
+      if (scrollToTopButton && scrollToBottomButton) {
+        scrollToTopButton.removeEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        scrollToBottomButton.removeEventListener("click", () => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        });
+      }
+    };
+  }, []);
 
   return (
     <>
+      <div class="scroll-buttons">
+        <button id="scrollToTop">⬆ Scroll to Top</button>
+        <button id="scrollToBottom">⬇ Scroll to Bottom</button>
+      </div>
       <div className="active-subscriptions">
         <h1 className="subs-header">Active Subscriptions</h1>
         {activeSubscriptions.map((subscription) => (
@@ -43,10 +73,6 @@ const Subs = () => {
             active={false}
           />
         ))}
-      </div>
-      <div class="scroll-buttons">
-        <button id="scrollToTop">⬆ Scroll to Top</button>
-        <button id="scrollToBottom">⬇ Scroll to Bottom</button>
       </div>
     </>
   );
