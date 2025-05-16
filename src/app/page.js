@@ -50,7 +50,7 @@ export default function Home() {
         <button id="scrollToBottom">⬇</button>
       </div>
 
-      <p className="intro-container">
+      <div className="intro-container">
         <div>
           <div>
             <br />
@@ -62,8 +62,8 @@ export default function Home() {
             spends $32.84 per month on unused subscriptions.
             <br />
             <br />
-          </div>
-          <div>
+          {/* </div>
+          <div> */}
             Additionally, we know that banking is a complex and often
             overwhelming process. So, we decided to create a platform that not
             only helps you track your subscriptions but also provides you with
@@ -74,7 +74,7 @@ export default function Home() {
             financial decisions.
           </div>
         </div>
-      </p>
+      </div>
       <h2>
         Welcome to BankAware, your personal subscription tracker and banking
         "know-it-all."

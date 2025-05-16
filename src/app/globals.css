@@ -85,7 +85,7 @@ h3 {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: bold;
+  /* font-weight: bold; */
   width: 70%;
   display: flex;
   justify-content: center;
