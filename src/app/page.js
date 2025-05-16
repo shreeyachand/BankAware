@@ -10,7 +10,6 @@ export default function Home() {
         Welcome to BankAware, your personal subscription tracker and banking
         "know-it-all."
       </h2>
-      {/*Sample of using subscription component, will be filled with our data*/}
       <h3>Meet the Team!</h3>
       <div className="headshots-container">
         <div className="phanuelle">

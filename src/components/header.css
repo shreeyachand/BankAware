@@ -10,7 +10,7 @@ body {
     justify-content: space-evenly;
     height: 100px;
     background-color: var(--foreground);
-    color: white;
+    color: #ffffff;
     font-family: "Barlow", sans-serif;
   }
   
@@ -23,13 +23,21 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    /* color: #ffffff; */
+  }
+  .links a:visited {
     color: white;
   }
+  .links a:hover {
+    color: var(--accent-color);
+  }
+
   
   a {
     margin: 0 20px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
   }
 
