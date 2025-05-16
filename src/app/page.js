@@ -16,7 +16,7 @@ export default function Home() {
         <div className="phanuelle">
           <img src="/Phanuelle_Manuel_square.jpg" alt="Phanuelle Manuel" />
           <h4>Phanuelle Manuel</h4>
-          <p>Freshman Computer Science major @ Uni. of Alabama</p>
+          <p>Freshman Computer Science major @ University of Alabama</p>
         </div>
         <div className="shreeya">
           <img src="/shreeya-headshot.jpeg" alt="Shreeya Chand" />
@@ -28,10 +28,15 @@ export default function Home() {
         <h4>Joshua Udo</h4>
           <p>Sophomore Computer Science major @ Grambling State University </p>
           </div>
-        <img src="/images/benjamin.jpeg" alt="Bridget Jiang" />
-        <div>
+          <div>
+        <img src="/bridget-headshot.jpeg" alt="Bridget Jiang" />
         <h4>Bridget Jiang</h4>
-          <p>Freshman _______ major @ MIT</p>
+          <p>Freshman Mathematics major @ MIT</p>
+          </div>
+          <div>
+        <img src="/elikem-headshot.png" alt="Elikem Hamenoo" />
+        <h4>Elikem Hamenoo</h4>
+          <p>Freshman Computer Science major @ Grambling State University</p>
           </div>
       </div>
     </>

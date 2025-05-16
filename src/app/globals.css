@@ -62,10 +62,11 @@ h3 {
 }
 
 .headshots-container {
-  width: 400px;
-  margin-left: 250px;
+  /* width: 400px; */
+  /* margin-left: 50px; */
+  /* margin-right: 100px; */
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: 20px;
   text-align: center;
