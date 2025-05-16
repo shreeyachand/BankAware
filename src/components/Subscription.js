@@ -21,12 +21,14 @@ const Subscription = ({ name, type, image, cost, active, savings, date, last}) =
             }
 
             {last && 
+            <>
               <p className="tooltip">⚠️
-                <span> Service last used {last}. Consider unsubscribing!</span>
-                <div className="message">
-                  Message box
-                </div>
+                <span> Service last used {last}.</span>
+                 <div className="message">
+                  Consider canceling: these monthly payments add up! That's ${cost * 12} a year that could instead go toward savings or paying off debt: things that improve your financial health in the long run.
+              </div>
               </p>
+              </>
             }
         </div>
         {

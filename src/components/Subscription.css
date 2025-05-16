@@ -11,7 +11,8 @@ img {
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 20px;
-    height:150px;
+    height: 150px;
+    transition: height 0.3s ease-in-out;
 }
 .money {
     font-weight: 700
@@ -22,6 +23,9 @@ img {
 .tooltip:hover .message {
     display: inline-block;
     color: #d03027;
+}
+.subscription:hover {
+    height: 200px;
 }
 .sub-info {
     display: flex;
