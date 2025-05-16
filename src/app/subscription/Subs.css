@@ -1,33 +1,111 @@
 @import "../globals.css";
 
 .subs-header {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom:10px;
-    font-style:italic;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: italic;
 }
 
 .scroll-buttons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .scroll-buttons button {
-    background-color: var(--foreground);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-  }
-  
-  .scroll-buttons button:hover {
-    background-color: var(--accent-color);
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-buttons button {
+  background-color: var(--foreground);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Adding a pop up for when subscriptions are canceled */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.modal button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--foreground);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal button:hover {
+  background: var(--accent-color);
+}
+
+/* Making text of the subs white */
+.subscription,
+.subscription .type,
+.subscription .money,
+.subscription p,
+.subscription .tooltip,
+.subscription .message {
+  color: #fff;
+}
+
+/* Making cancelation subtext white */
+.subscription .cancel-warning {
+  color: var(--accent-color) !important;
+}
+.message {
+  color: #fff;
+}
+.subscription .message .cancel-warning,
+.subscription .cancel-warning {
+  color: var(--accent-color) !important;
+  background: none !important;
+}
+
+.subscription .message .cancel-warning,
+.subscription .cancel-warning,
+.cancel-warning {
+  color: #d03027 !important;
+  background: none !important;
+  font-weight: bold !important;
+  font-size: inherit !important;
+  border: none !important;
+}
+.subscription .message .cancel-warning {
+  background: yellow !important;
+}
+
+.warning-description {
+  color: #fff !important;
+}
+.subscription .cancel-warning {
+  color: #d03027 !important;
+  background: none !important;
+  font-weight: bold;
+}

@@ -23,7 +23,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.jpeg" />
         <link rel="shortcut icon" href="/favicon.jpeg" />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />

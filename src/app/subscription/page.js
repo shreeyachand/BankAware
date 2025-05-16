@@ -1,18 +1,20 @@
 "use client";
 
 import Subscription from "../../components/Subscription";
-import { activeSubscriptions, recommendedSubscriptions } from "../../data/data";
+import {
+  activeSubscriptions as initialActiveSubscriptions,
+  recommendedSubscriptions,
+} from "../../data/data";
 import { useEffect, useState } from "react";
 import "../globals.css";
 import "./Subs.css";
 
 const Subs = () => {
-  const [isClient, setIsClient] = useState(false);
+  const [activeSubs, setActiveSubs] = useState(initialActiveSubscriptions);
+  const [showModal, setShowModal] = useState(false);
+  const [canceledName, setCanceledName] = useState("");
 
   useEffect(() => {
-    // Ensure this code runs only on the client
-    setIsClient(true);
-
     const scrollToTopButton = document.getElementById("scrollToTop");
     const scrollToBottomButton = document.getElementById("scrollToBottom");
 
@@ -29,7 +31,6 @@ const Subs = () => {
       });
     }
 
-    // Cleanup event listeners when the component unmounts
     return () => {
       if (scrollToTopButton && scrollToBottomButton) {
         scrollToTopButton.removeEventListener("click", () => {
@@ -46,6 +47,14 @@ const Subs = () => {
     };
   }, []);
 
+  const handleCancel = (name) => {
+    setActiveSubs((subs) => subs.filter((sub) => sub.name !== name));
+    setCanceledName(name);
+    setShowModal(true);
+  };
+
+  const closeModal = () => setShowModal(false);
+
   return (
     <>
       <div className="scroll-buttons">
@@ -54,7 +63,7 @@ const Subs = () => {
       </div>
       <div className="active-subscriptions">
         <h1 className="subs-header">Active Subscriptions</h1>
-        {activeSubscriptions.map((subscription) => (
+        {activeSubs.map((subscription) => (
           <Subscription
             key={subscription.name}
             name={subscription.name}
@@ -64,6 +73,7 @@ const Subs = () => {
             active={true}
             date={subscription.date}
             last={subscription.last}
+            onCancel={handleCancel}
           />
         ))}
       </div>
@@ -80,7 +90,16 @@ const Subs = () => {
           />
         ))}
       </div>
+      {showModal && (
+        <div className="modal-backdrop">
+          <div className="modal">
+            <p>Subscription "{canceledName}" has been canceled.</p>
+            <button onClick={closeModal}>OK</button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
+
 export default Subs;
